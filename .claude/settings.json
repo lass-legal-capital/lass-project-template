@@ -1,0 +1,82 @@
+{
+  "project": {
+    "name": "{{PROJECT_NAME}}",
+    "description": "{{PROJECT_DESCRIPTION}}",
+    "version": "0.1.0"
+  },
+  "permissions": {
+    "allowedTools": [
+      "Read",
+      "Write",
+      "Edit",
+      "Bash",
+      "Glob",
+      "Grep",
+      "Task"
+    ]
+  },
+  "env": {
+    "PYTHON_VERSION": "3.11+",
+    "PROJECT_TYPE": "{{PROJECT_TYPE}}",
+    "FRAMEWORK": "TBD"
+  },
+  "hooks": {},
+  "model": "sonnet",
+  "memory": {
+    "autoLoad": true,
+    "path": ".claude/CLAUDE.md"
+  },
+  "commands": {
+    "enabled": true,
+    "path": ".claude/commands"
+  },
+  "settings": {
+    "maxContextLength": 200000,
+    "preferMarkdownLinks": true,
+    "autoSaveSession": true
+  },
+  "plansDirectory": "/.claude/plans",
+  "planMode": {
+    "enabled": true,
+    "planDocumentPath": "token.plan.md",
+    "plansDirectory": "/.claude/plans",
+    "qualityFirst": true,
+    "targetPlanTokens": {
+      "min": 700,
+      "max": 1200
+    },
+    "snippetMaxLines": 10,
+    "resumptionTemplate": "delta-first",
+    "loadRulesByTier": {
+      "A": [
+        "documents/core/Roadmap.md",
+        "documents/core/TODO.md",
+        ".claude/CLAUDE.md"
+      ],
+      "B": [
+        ".claude/rules/code-quality-standards.md",
+        ".claude/rules/security-best-practices.md",
+        ".claude/rules/testing-requirements.md"
+      ],
+      "C": [
+        ".claude/skills/pre-commit-check/SKILL.md",
+        ".claude/skills/validate-dod/SKILL.md"
+      ]
+    }
+  },
+  "gitignore": {
+    "respectGitignore": true,
+    "additionalPatterns": [
+      ".env",
+      ".env.local",
+      "*.pyc",
+      "__pycache__/",
+      ".pytest_cache/",
+      ".coverage",
+      "htmlcov/",
+      "*.log",
+      "credentials.json",
+      "token.json"
+    ]
+  }
+}

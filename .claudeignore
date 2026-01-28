@@ -1,0 +1,81 @@
+# .claudeignore - Arquivos que Claude Code deve ignorar
+# Propósito: Reduzir context bloat, evitar leitura de arquivos temporários ou sensíveis
+
+# Data Files (may be large or contain sensitive data)
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs (pode ser volumoso, não relevante para contexto de código)
+*.log
+logs/
+*.log.*
+
+# Testing Coverage Reports (HTML report é volumoso)
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Downloaded Data (dados brutos, não relevante para código)
+downloads/
+raw_data/
+exports/
+
+# Generated Reports
+reports/
+output/
+
+# Virtual Environment (dependencies instaladas, não código do projeto)
+venv/
+ENV/
+env/
+.venv
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Build Artifacts
+build/
+dist/
+*.egg-info/
+
+# Documentation Build
+docs/_build/
+site/
+
+# Temporary Files
+*.tmp
+*.bak
+.cache/
+
+# Backup Files
+backup/
+*.backup
+
+# Node Modules (if any JS tooling added)
+node_modules/
+
+# Git
+.git/
+
+# Large binary files (Excel, PDFs)
+*.xlsx
+*.xls
+*.pdf
+
+# Except: Keep important project docs (não ignorar docs essenciais)
+!documents/**/*.pdf

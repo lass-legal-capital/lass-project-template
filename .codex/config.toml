@@ -1,0 +1,45 @@
+# Cursor/Codex Configuration - {{PROJECT_NAME}}
+# This is a mirror of .claude/ configuration for Cursor compatibility
+
+[project]
+name = "{{PROJECT_NAME}}"
+description = "{{PROJECT_DESCRIPTION}}"
+version = "0.1.0"
+
+[env]
+PYTHON_VERSION = "3.11+"
+PROJECT_TYPE = "{{PROJECT_TYPE}}"
+
+[memory]
+autoLoad = true
+path = ".codex/AGENTS.md"
+
+[rules]
+# Path-targeted rules loaded automatically based on file context
+paths = [
+    ".codex/rules/code-quality-standards.md",
+    ".codex/rules/security-best-practices.md",
+    ".codex/rules/testing-requirements.md"
+]
+
+[skills]
+# Workflow skills available via slash commands
+path = ".codex/skills"
+
+[gitignore]
+respectGitignore = true
+additionalPatterns = [
+    ".env",
+    ".env.local",
+    "*.pyc",
+    "__pycache__/",
+    ".pytest_cache/",
+    ".coverage",
+    "htmlcov/",
+    "*.log",
+    "credentials.json",
+    "token.json"
+]
+
+# NOTE: This file mirrors .claude/settings.json for Cursor compatibility.
+# When updating settings, update both files to maintain consistency.
