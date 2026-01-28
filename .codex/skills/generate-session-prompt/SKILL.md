@@ -11,7 +11,7 @@ Gera prompt otimizado para retomada de desenvolvimento em nova sessão, minimiza
 
 - Sessão atual >150k tokens (performance degradada)
 - Retomar trabalho após pausa (dias/semanas)
-- Trocar de ferramenta (ex: Cursor → Claude Code)
+- Trocar de ferramenta (ex: Cursor → Claude Code/Codex)
 - Mudança de contexto (ex: finalizou M1.2, vai iniciar M1.3)
 
 ## Princípios
@@ -247,7 +247,7 @@ Após gerar, verificar:
 ### Cenário 3: Mudança de Ferramenta
 
 ```bash
-# Cursor → Claude Code
+# Cursor → Claude Code/Codex
 → generate-session-prompt [milestone-id]
 
 # Prompt otimizado para nova ferramenta

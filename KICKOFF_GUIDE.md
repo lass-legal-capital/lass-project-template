@@ -122,7 +122,7 @@ seu-projeto/
 │   ├── skills/                 # ✅ Workflows (prontos para uso)
 │   └── prompts/
 │       └── kickoff-prompt.md   # Referência do prompt usado
-├── .codex/                     # ✅ Mirror para Cursor
+├── .codex/                     # ✅ Mirror para Codex/Cursor
 ├── documents/
 │   ├── README.md               # ✅ Índice da documentação
 │   ├── core/

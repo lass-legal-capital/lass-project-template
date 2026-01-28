@@ -162,7 +162,7 @@ Exemplo para API: api, auth, db, models, routes, middleware, docs
 
 ### Política de Atribuição
 
-1. **NUNCA** mencionar assistentes de IA (Claude, Cursor AI agents, etc.)
+1. **NUNCA** mencionar assistentes de IA (Claude, Codex, Cursor AI agents, etc.)
 2. **NUNCA** incluir co-autoria com IA
 3. **SEMPRE** apresentar como trabalho do desenvolvedor
 4. **SEMPRE** usar conventional commits padrão

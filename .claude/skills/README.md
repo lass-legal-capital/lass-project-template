@@ -280,6 +280,7 @@ Skills seguem padrão MCP (Model Context Protocol) Agent Skills:
 
 **Compatibilidade:**
 - Cursor AI (via MCP)
+- OpenAI Codex (via Agent Skills)
 - Claude Code (via Agent Skills)
 - Outros editores com suporte MCP
 

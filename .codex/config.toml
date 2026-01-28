@@ -1,5 +1,5 @@
 # Cursor/Codex Configuration - {{PROJECT_NAME}}
-# This is a mirror of .claude/ configuration for Cursor compatibility
+# This is a mirror of .claude/ configuration for Codex and Cursor compatibility
 
 [project]
 name = "{{PROJECT_NAME}}"
@@ -41,5 +41,5 @@ additionalPatterns = [
     "token.json"
 ]
 
-# NOTE: This file mirrors .claude/settings.json for Cursor compatibility.
+# NOTE: This file mirrors .claude/settings.json for Codex and Cursor compatibility.
 # When updating settings, update both files to maintain consistency.
